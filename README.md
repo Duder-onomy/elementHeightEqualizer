@@ -1,3 +1,21 @@
-Aight. 
+Will give all elements equal height.
 
-This will look through the dom for elements with the data attribute `equalize`. When it finds one, it will equalize the height of all first level children from that elements parent.
+Should work with all modern module loaders.
+install through bower `bower install --save elementHeightEqualizer`
+
+use like:
+
+```html
+<div equalizer-container>
+    <div equalize></div>
+    <div equalize></div>
+    <div equalize></div>
+    <div equalize></div>
+    <div equalize></div>
+    <div equalize></div>
+</div>
+```
+
+All elements in the equalizer container will have the same height.
+
+You might want to hook this into the resize event to get it to work while people are resizing.
